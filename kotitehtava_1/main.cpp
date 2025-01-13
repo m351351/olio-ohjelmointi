@@ -4,6 +4,8 @@
 using namespace std;
 int game(int);
 
+//testataan tattadaa
+
 int main()
 {
     int max = 0;
