@@ -9,6 +9,11 @@ Luottotili::Luottotili(string o, double lr)
 
 }
 
+Luottotili::~Luottotili()
+{
+
+}
+
 bool Luottotili::withdraw(double nosto)
 {
     if (nosto < 0)
@@ -59,4 +64,10 @@ bool Luottotili::deposit(double pano)
         return true;
     }
 
+}
+
+double Luottotili::getBalance()
+{
+    cout<<luottoraja-saldo;
+    return luottoraja-saldo;
 }

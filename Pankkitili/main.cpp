@@ -16,7 +16,10 @@ int main()
     /* Luottotili tiptap("o", 1000);
    tiptap.withdraw(10);
     tiptap.withdraw(100);
-    tiptap.deposit(3000);*/
+    tiptap.deposit(3000);
+    Luottotili tiptap("o", 1000);
+    tiptap.withdraw(100);
+    tiptap.getBalance();*/
 
     Asiakas A("MERI", 1000);
     Asiakas B("KURJA KOYHA", 1000);
@@ -29,10 +32,10 @@ int main()
     A.luotonMaksu(500);
 
     A.talletus(100);
-    //A.nosto(50);
+    A.nosto(50);
 
     // tilisiirto A:lta B:lle
-    A.tilinsiirto(70, B);
+    A.tilinsiirto(30, B);
 
     A.ShowSaldo();
     B.ShowSaldo();

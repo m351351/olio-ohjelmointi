@@ -6,11 +6,13 @@ Asiakas::Asiakas(string asiakkaanNimi, double lr)
     :kayttotili(asiakkaanNimi), luottotili(asiakkaanNimi, lr) //näin alustettu asiakasluokka ja jäsenfunktiot yhdellä konstruktorilla
 
 {
+
     nimi = asiakkaanNimi;
+
     cout<<"Pankkitili luotu asiakkaalle "<<asiakkaanNimi<<endl;
     cout<<"Luottotili luotu asiakkaalle "<<asiakkaanNimi<<endl;
     cout<<"Luottoraja on: "<<lr<<endl;
-    cout<<"Nykyinen pankkitilin saldo on: ";
+    cout<<"Nykyinen pankkitilin saldo ";
     ShowSaldo();
     cout<<endl;
     cout<<endl;
@@ -30,7 +32,7 @@ bool Asiakas::talletus(double summa)
         cout<<"Asiakkaan "<<nimi;
         cout<<" talletus onnistui"<<endl;
         cout << "Tilille laitettu: "<< summa << endl;
-        cout<<"Nykyinen saldo: ";
+        cout<<"Nykyinen saldo ";
         ShowSaldo();
         cout<<endl;
         return ret;
@@ -53,7 +55,7 @@ bool Asiakas::nosto(double nosto)
         cout<<"Asiakkaan "<<nimi;
         cout<<" nosto onnistui"<<endl;
         cout << "Tililta otettu: "<< nosto << endl;
-        cout<<"Nykyinen saldo: ";
+        cout<<"Nykyinen saldo ";
         ShowSaldo();
         return ret;
     }
@@ -122,11 +124,14 @@ bool Asiakas::tilinsiirto(double summa, Asiakas &saaja)
 
 void Asiakas::ShowSaldo()
 {
-    cout<<"Saldotietokysely kayttajalta: ";
-    cout<<nimi<<endl;
-    cout<<"Kayttotilin saldo on: ";
+    cout<<"kayttajalla ";
+    cout<<nimi;
+    cout<<"on: ";
     kayttotili.getBalance();
-    cout<<endl;
+
+    cout<<"Luottotilin saldo on: ";
+    luottotili.getBalance();
+    cout<<endl<<endl;
 }
 
 string Asiakas::getName()
