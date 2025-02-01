@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-   /* Chef c_olio("Gordon"); // tähän pitää laittaa kokin nimi koska .h:ssa on suluissa string
+    Chef c_olio("Gordon"); // tähän pitää laittaa kokin nimi koska .h:ssa on suluissa string
 
     int annoksia = c_olio.makeSalad(17);
     cout<< "valmiita salaattiannoksia: "
@@ -16,7 +16,7 @@ int main()
     int k_annoksia = c_olio.makeSoup(215);
     cout<< "valmiita keittoannoksia: "
          <<k_annoksia
-         <<endl;*/
+         <<endl;
 
 
     ItalianChef i_olio("Mario");
