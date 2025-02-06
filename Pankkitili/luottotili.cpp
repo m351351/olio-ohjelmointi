@@ -48,26 +48,24 @@ bool Luottotili::deposit(double pano)
     if(pano<0)
     {
         cout << "ei voi laittaa negatiivista summaa"<< endl<<endl;
+        return false;
 
     }
 
     if(saldo-pano<0)
     {
         cout<<"yritat maksaa liikaa. Voit maksaa korkeintaan: "<<saldo<<endl<<endl;
+        return false;
     }
 
 
     else{
         cout << "lisatty summa: "<<pano<<endl;
         cout << "nykyinen velka: "<<saldo-pano<<endl<<endl;
-        saldo-=pano;
+        saldo = saldo-pano;
+        Luottotili::getBalance();
         return true;
     }
 
 }
 
-double Luottotili::getBalance()
-{
-    cout<<luottoraja-saldo;
-    return luottoraja-saldo;
-}

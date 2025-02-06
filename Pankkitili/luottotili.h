@@ -12,7 +12,7 @@ public:
 
     virtual bool deposit(double summa) override;
 
-    double getBalance();
+
 
 protected:
     double luottoraja = 0;

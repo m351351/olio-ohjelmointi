@@ -124,9 +124,9 @@ bool Asiakas::tilinsiirto(double summa, Asiakas &saaja)
 
 void Asiakas::ShowSaldo()
 {
-    cout<<"kayttajalla ";
+    cout<<"kayttajan ";
     cout<<nimi;
-    cout<<"on: ";
+    cout<<" pankkitilin saldo on: ";
     kayttotili.getBalance();
 
     cout<<"Luottotilin saldo on: ";

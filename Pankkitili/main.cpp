@@ -24,7 +24,7 @@ int main()
     Asiakas A("MERI", 1000);
     Asiakas B("KURJA KOYHA", 1000);
 
-    cout<<"nostetaan luottoa..."<<endl;
+   cout<<"nostetaan luottoa..."<<endl;
 
     A.luotonNosto(900);
 
