@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-    Seuraaja *a = new Seuraaja("Meri 1");
-    Seuraaja *b = new Seuraaja("Meri 2");
-    Seuraaja *c = new Seuraaja("Meri 3");
-    Seuraaja *d = new Seuraaja("Meri 4");
+    Seuraaja *a = new Seuraaja("Meri aa");
+    Seuraaja *b = new Seuraaja("Meri bee");
+    Seuraaja *c = new Seuraaja("Meri cee");
+    Seuraaja *d = new Seuraaja("Meri dee");
 
 
     Notifikaattori *n = new Notifikaattori();
@@ -20,7 +20,7 @@ int main()
     n->lisaa(c);
     n->lisaa(d);
    n->tulosta();
-    n->poista(a);
+    n->poista(b);
     n->poista(c);
     n->postita("tassa on viesti ");
     n->tulosta();

@@ -11,12 +11,10 @@ void Notifikaattori::lisaa(Seuraaja *uusiSeur)
     // a->next =b
 
     uusiSeur->next = seuraajat;
-    //cout<<"lisataan seuraajat "<<endl;
 
 
     // alku = a
     seuraajat = uusiSeur;
-    //  cout<<"seuraajaksi maaratty uusi(next) seuraaja"<<endl;
 }
 
 
@@ -26,29 +24,21 @@ void Notifikaattori::lisaa(Seuraaja *uusiSeur)
 
 void Notifikaattori::poista(Seuraaja *poistaSeur)
 {
-    //alku = a
-    // a->next = b
-    // a->next = c
-    // b:n poisto: a -> next = c
 
-    // silmukka käy läpi listaa
 
     Seuraaja *alku = seuraajat;
-    // jos *alku = d
-    // alku = alku ->next
-    // poistu funktiosta: return
+
 
     while(alku != nullptr)
     {
         cout<<endl;
+        cout<<"kaydaan listaa lapi"<<endl;
         if(alku->next == poistaSeur){
+            cout<<"poistellaan: ";
             cout<<alku->getNimi()<<(", olet heikoin lenkki. hyvasti.")<<endl;
-            //testaa onko alku->next=d
             alku->next = poistaSeur->next;
+        return;
         }
-        //      jos on: alku->next =pois->next
-        //      poistu funktiosta return
-        //      jos ei ole: mene seuraavaan
 
         alku = alku->next;
 
@@ -71,7 +61,7 @@ void Notifikaattori::tulosta()
     {
         cout
             //<<"listassa nyt: "
-             <<alku->getNimi()<<endl;
+            <<alku->getNimi()<<endl;
 
         alku = alku->next;
 
