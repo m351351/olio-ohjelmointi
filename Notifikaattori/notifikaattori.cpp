@@ -35,9 +35,9 @@ void Notifikaattori::poista(Seuraaja *poistaSeur)
         cout<<"kaydaan listaa lapi"<<endl;
         if(alku->next == poistaSeur){
             cout<<"poistellaan: ";
-            cout<<alku->getNimi()<<(", olet heikoin lenkki. hyvasti.")<<endl;
+            cout<<alku->next->getNimi()<<(", olet heikoin lenkki. hyvasti.")<<endl;
             alku->next = poistaSeur->next;
-        return;
+        //return;
         }
 
         alku = alku->next;
@@ -79,5 +79,6 @@ void Notifikaattori::postita(string viesti)
     {
         alku->paivitys(viesti);
         alku = alku->next;
+
     }
 }

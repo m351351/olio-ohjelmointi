@@ -23,6 +23,7 @@ int main()
     n->poista(b);
     n->poista(c);
     n->postita("tassa on viesti ");
+    n->postita("plup ");
     n->tulosta();
 
 
