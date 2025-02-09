@@ -37,7 +37,7 @@ void Notifikaattori::poista(Seuraaja *poistaSeur)
             cout<<"poistellaan: ";
             cout<<alku->next->getNimi()<<(", olet heikoin lenkki. hyvasti.")<<endl;
             alku->next = poistaSeur->next;
-        //return;
+        return;
         }
 
         alku = alku->next;
