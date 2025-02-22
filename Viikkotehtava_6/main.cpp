@@ -44,12 +44,14 @@ int main ()
 
         switch(selection)
         {
-            /*   case 0:
-            // Kysy käyttäjältä uuden opiskelijan nimi ja ikä
+            case 0:
+            /*   // Kysy käyttäjältä uuden opiskelijan nimi ja ikä
             // Lisää uusi student StudentList vektoriin.
             student *s = new student
                 studentlist->lisää(student)
             break;*/
+
+                studentList.emplace_back(name, age);
 
         case 1:
 
