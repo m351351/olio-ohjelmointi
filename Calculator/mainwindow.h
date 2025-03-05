@@ -57,5 +57,6 @@ private:
     int tila = 1;
     int nollaus = 0;
 
+
 };
 #endif // MAINWINDOW_H

@@ -225,7 +225,6 @@ void MainWindow::numberClickHandler(int num)
         qDebug()<<"TILA 1";
         ui->num1->setText(uusiStr);
 
-
     }
 
     else if (tila ==2)
@@ -234,17 +233,22 @@ void MainWindow::numberClickHandler(int num)
         qDebug()<<"TILA 2";
         ui->num2->setText(uusiStr);
     }
+
 }
 
 
 void MainWindow::on_ENTER_clicked()
 {
+
+
     if(tila>3){
         tila =3;
         qDebug()<<"TILA 3";
+
     }
     else{
         tila++;
+
     }
 
     qDebug()<<"siirrytaan seuraavaan tilaan...";
